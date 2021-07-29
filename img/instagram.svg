@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 25.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:url(#SVGID_1_);}
-	.st1{fill:url(#SVGID_2_);}
-	.st2{fill:#FFFFFF;}
+	.st0{fill:#34444C;}
+	.st1{fill:#FFFFFF;}
 </style>
-<radialGradient id="SVGID_1_" cx="-289.6046" cy="164.9116" r="44.899" gradientTransform="matrix(0.8884 0 0 -0.8884 269.1864 178.5338)" gradientUnits="userSpaceOnUse">
-	<stop  offset="0" style="stop-color:#FFDD55"/>
-	<stop  offset="0.328" style="stop-color:#FF543F"/>
-	<stop  offset="0.348" style="stop-color:#FC5245"/>
-	<stop  offset="0.504" style="stop-color:#E64771"/>
-	<stop  offset="0.643" style="stop-color:#D53E91"/>
-	<stop  offset="0.761" style="stop-color:#CC39A4"/>
-	<stop  offset="0.841" style="stop-color:#C837AB"/>
-</radialGradient>
-<path class="st0" d="M24.9,32L7.1,32C3.2,32,0,28.8,0,24.9L0,7.1C0,3.2,3.2,0,7.1,0l17.8,0C28.8,0,32,3.2,32,7.1l0,17.8
+<path class="st0" d="M24.9,32H7.1C3.2,32,0,28.8,0,24.9V7.1C0,3.2,3.2,0,7.1,0h17.8C28.8,0,32,3.2,32,7.1v17.8
 	C32,28.8,28.8,32,24.9,32z"/>
-<radialGradient id="SVGID_2_" cx="-297.1986" cy="56.1405" r="29.813" gradientTransform="matrix(0.8884 0 0 -0.592 269.1864 32.8331)" gradientUnits="userSpaceOnUse">
-	<stop  offset="0" style="stop-color:#4168C9"/>
-	<stop  offset="0.999" style="stop-color:#4168C9;stop-opacity:0"/>
-</radialGradient>
-<path class="st1" d="M24.9,32L7.1,32C3.2,32,0,28.8,0,24.9L0,7.1C0,3.2,3.2,0,7.1,0l17.8,0C28.8,0,32,3.2,32,7.1l0,17.8
-	C32,28.8,28.8,32,24.9,32z"/>
-<path class="st2" d="M16,22.2c-3.4,0-6.2-2.8-6.2-6.2s2.8-6.2,6.2-6.2s6.2,2.8,6.2,6.2S19.4,22.2,16,22.2z M16,11.6
+<path class="st1" d="M16,22.2c-3.4,0-6.2-2.8-6.2-6.2s2.8-6.2,6.2-6.2s6.2,2.8,6.2,6.2S19.4,22.2,16,22.2z M16,11.6
 	c-2.4,0-4.4,2-4.4,4.4s2,4.4,4.4,4.4s4.4-2,4.4-4.4S18.4,11.6,16,11.6z"/>
-<circle class="st2" cx="22.7" cy="9.3" r="1.3"/>
-<path class="st2" d="M21.3,27.5H10.7c-3.4,0-6.2-2.8-6.2-6.2V10.7c0-3.4,2.8-6.2,6.2-6.2h10.7c3.4,0,6.2,2.8,6.2,6.2v10.7
+<circle class="st1" cx="22.7" cy="9.3" r="1.3"/>
+<path class="st1" d="M21.3,27.5H10.7c-3.4,0-6.2-2.8-6.2-6.2V10.7c0-3.4,2.8-6.2,6.2-6.2h10.7c3.4,0,6.2,2.8,6.2,6.2v10.7
 	C27.5,24.8,24.8,27.5,21.3,27.5z M10.7,6.2c-2.4,0-4.4,2-4.4,4.4v10.7c0,2.4,2,4.4,4.4,4.4h10.7c2.4,0,4.4-2,4.4-4.4V10.7
-	c0-2.4-2-4.4-4.4-4.4H10.7z"/>
+	c0-2.4-3-4.4-5.4-4.4L10.7,6.2z"/>
 </svg>
