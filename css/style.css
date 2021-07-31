@@ -20,6 +20,10 @@ html {
  * Remove the margin in all browsers.
  */
 
+header {
+  padding: 15px;
+}
+
 body {
   background-color: #e7ecee;
   font-family: 'Work Sans', sans-serif;
@@ -33,7 +37,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 3.35em;
+  font-size: 3.00em;
   font-weight: 800;
 }
 
@@ -55,6 +59,9 @@ h5 {
   font-size: 1.00em;
   font-weight: 500;
   margin: 10;
+}
+img {
+  width: 100%;
 }
 
 /**
