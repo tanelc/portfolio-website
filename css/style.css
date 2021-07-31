@@ -15,7 +15,9 @@ html {
 
 /* Sections
    ========================================================================== */
-
+   header {
+     padding: 10px;
+   }
 /**
  * Remove the margin in all browsers.
  */
@@ -26,6 +28,7 @@ body {
   font-weight: 400; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #34444c;
+  padding: 10px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,7 +69,7 @@ img {
 main {
   font-family: 'Work Sans', sans-serif;
   display: block;
-  padding: 16px;
+  padding: 10px;
 }
 
 /**
