@@ -21,7 +21,6 @@ html {
  */
 
 body {
-  background-color: #e7ecee;
   font-family: 'Work Sans', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 400; /* Sets the font weight to 300 */
@@ -67,6 +66,7 @@ img {
 main {
   font-family: 'Work Sans', sans-serif;
   display: block;
+  padding: 16px;
 }
 
 /**
@@ -79,8 +79,8 @@ main {
   */
 
  footer {
-  background-color: #a8bbc5;
-    padding: 20px;
+  background-color: #e7ecee;
+    padding: 16px;
  }
 
 
@@ -116,22 +116,20 @@ pre {
  */
 
  a {
-   color: #ff7f50;
+   color: #34444c;
    text-decoration: none; /* No underlining */
  }
  a:visited { /* visited link */
-   color: #ff7f50;
+   color: #34444c;
  }
  a:hover {
-   color: #cc6540;
-   text-decoration: underline; /* Underlining when hovering over a link */
+   color: #a8bbc5;
  }
  a:active { /* selected link */
-   color: #994c30;
+   color: #34444c;
  }
 a:focus {
-  color: #cc6540;
-  text-decoration: underline;
+  color: #a8bbc5;
 }
 
 /**
@@ -210,74 +208,17 @@ img {
    ========================================================================== */
 
 /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
+.button {
+   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+   background-color: #e98e7c;
+   color: #ffffff; /* needed to override the default link color */
+   font-weight: 500;
+   padding: 10px;
+   border-radius: 0px;
+   transition: 0.2s opacity;
+ }
 
 /**
  * Correct the padding in Firefox.
