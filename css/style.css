@@ -20,10 +20,6 @@ html {
  * Remove the margin in all browsers.
  */
 
-header {
-  padding: 15px;
-}
-
 body {
   background-color: #e7ecee;
   font-family: 'Work Sans', sans-serif;
@@ -119,8 +115,23 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 
-a {
-  background-color: transparent;
+ a {
+   color: #ff7f50;
+   text-decoration: none; /* No underlining */
+ }
+ a:visited { /* visited link */
+   color: #ff7f50;
+ }
+ a:hover {
+   color: #cc6540;
+   text-decoration: underline; /* Underlining when hovering over a link */
+ }
+ a:active { /* selected link */
+   color: #994c30;
+ }
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
 }
 
 /**
