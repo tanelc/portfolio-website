@@ -13,16 +13,19 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-header, body, main, footer {
-     padding: 10px;
-}
+header {
+padding-top: 25px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+  }
+
+body, main, footer {
+       padding: 10px;
+       }
 
 img {
   width: 100%;
-}
-
-header {
-  background-color: #ff44c4;
 }
 
 /**
@@ -44,7 +47,7 @@ main {
 
  footer {
   background-color: #e7ecee;
-    padding: 10px;
+  padding: 10px;
  }
 
 /**
@@ -81,6 +84,7 @@ a.button {
    color: #ffffff; /* needed to override the default link color */
    font-weight: 500;
    padding: 10px;
+   margin-bottom: 50px;
    border-radius: 0px;
    transition: 0.2s opacity;
  transition-duration: 0.4s;
@@ -92,6 +96,12 @@ a.button:hover {
 }
 
 /* typography */
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+  color: #34444c;
+}
+
 h1, h2, h3, h4, h5, p {
   font-family: 'Work Sans', sans-serif; line-height: 1.4; color: #34444c;
 }
@@ -127,6 +137,45 @@ p {
   font-weight: 400;
 }
 
-/**
- * Correct the padding in Firefox.
- */
+/* Layout styling */
+.logo {
+  max-width: 250px;
+  text-align: left;
+}
+
+/* Navigation */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 25px;
+  text-transform: uppercase;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+nav > ul > li > a:visited
+a:visited {color: #34444c;}
+a:hover {color: #a8bbc5;}
+a:active {color: #34444c;}
+a:focus {color: #a8bbc5;}
+
+#contact {
+  padding: 55 10px;
+}
+
+#opener {
+  max-width: 300px;
+}
+
+#overline {
+  font-style: italic;
+  color: #34444c;
+  }
