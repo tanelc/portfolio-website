@@ -6,15 +6,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<head>
   <meta charset="utf-8">
   <meta name="author" content="Tania Elcome">
-  <meta name="description" content="Tania Elcome is a UX Designer with a background in Art and Creative Direction. Based in Hamburg, Germany">
+  <meta name="description" content="Tania Elcome is a UX Designer and Creative Director. Based in Hamburg, Germany">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
-  <title>Tania Elcome: UX Designer and Creative Director</title>
+  <title>Tania Elcome: Case Study ezee Vegan</title>
 </head>
 
 <body>
+  <div class="content">
   <header>
     <a href="https://www.taniaelcome.de/">
       <img src="img/elcomelogo.svg" class="logo" alt="Logo Tania Elcome">
@@ -22,19 +26,24 @@
     <div>
       <nav>
         <ul>
-          <li><p><a href="index.html">Work</a></p></li>
-          <li><p><a href="about.html">About</a></p></li>
-          <li><p><a href="#contact">Contact</a></p></li>
+          <li>
+            <a href="index.html">Work</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <br>
-    <!-- open row that holds (2) columns for project -->
-
-    <div>
-      <!-- open first column (used for image) -->
+      <!-- open row that holds (2) columns for project -->
+        <div class="twowrapper">
+        <!-- open first column (used for image) -->
+        <div>
       <picture>
         <source srcset="img/ezee/ezee_logo_600x600.svg" width="300" height="300" media="(max-width:767px)">
         <img src="img/ezee/ezee_logo_600x600.svg" width="550" height="550" alt="ezee vegan. An application for vegan eating and nutrition.">
@@ -46,13 +55,11 @@
       <h3>ezee Vegan</h3><!-- heading for the project -->
       <p>
         <a id="caption">About</a><br>
-        ezee vegan is an application helping users find information and inspiration for a plant-based diet.<br>
+        ezee vegan is an application helping users find information and inspiration for a plant-based diet.<br><br>
         <a id="caption">My Role</a><br>
-        UX Design student at Career Foundry<br>
-        <br>
+        UX Design student at Career Foundry<br><br>
         <a id="caption">Disciplines</a><br>
-        Research, Interview, Information Architecture, Interaction Design, and UI Design. <br>
-        <br>
+        Research, Interview, Information Architecture, Interaction Design, and UI Design. <br><br>
           <a id="caption">Tools</a><br>
         - Pen, Paper & Post-Its<br>
         - Adobe XD<br>
@@ -68,31 +75,32 @@
       <p> Lorem
     </div>
 
-  </main>
-  <footer id="contact">
-    <span>
-      <h2>Say «Hi» or drop me a line to get in touch: <a href="+491512635430">+491512635430</a> or <a href="mailto:moin@taniaelcome.de?subject=Hi!">moin@taniaelcome.de</a></h2>
-    </span>
-    <span>
-      <a href="https://www.linkedin.com/in/elcome/">
-        <img src="img/linkedin.svg" alt="Linkedin Tania Elcome" width="32" height="32">
-      </a>
-      <a href="https://www.xing.com/profile/Tania_Elcome/cv">
-        <img src="img/xing.svg" alt="Xing Tania Elcome" width="32" height="32">
-      </a>
-      <a href="https://www.instagram.com/taniaelcome/">
-        <img src="img/instagram.svg" alt="Instagram Tania Elcome" width="32" height="32">
-      </a>
-    </span>
-    <br>
-
-    <div>
-      <p>
-        Office Tania Elcome <br>
+    <footer id="contact">
+      <span>
+        <h2>Say «Hi» or drop me a line to get in touch: <a href="+491512635430">+491512635430</a> or <a href="mailto:moin@taniaelcome.de?subject=Hi!">moin@taniaelcome.de</a></h2>
+      </span>
+      <div class="row">
+        <div class="column">
+          <a href="https://www.linkedin.com/in/elcome/">
+            <img src="img/linkedin.svg" alt="Linkedin Tania Elcome" width="32" height="32">
+          </a>
+        </div>
+        <div class="column">
+          <a href="https://www.xing.com/profile/Tania_Elcome/cv">
+            <img src="img/xing.svg" alt="Xing Tania Elcome" width="32" height="32">
+          </a>
+        </div>
+        <div class="column">
+          <a href="https://www.instagram.com/taniaelcome/">
+            <img src="img/instagram.svg" alt="Instagram Tania Elcome" width="32" height="32">
+          </a>
+        </div>
+      </div>
+      <p>Office Tania Elcome <br>
         Behnstr. 69, 22767 Hamburg, Germany</p>
+      <p id="imprint">© Tania Elcome 2021 Privacy Policy Legal</p>
+    </footer>
     </div>
-    <span> <p>© Tania Elcome 2021</span> <span>Privacy Policy</span> <span>Legal</p></span>
-  </footer>
-</body>
+    </body>
 
-</html>
+    </html>

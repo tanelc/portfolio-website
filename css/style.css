@@ -12,15 +12,17 @@ html {
   /* 2 */
 }
 
+.content {
+  max-width: 1920px;
+  margin: auto;
+  padding: 10px;
+}
+
 header {
   padding-top: 25px;
   padding-right: 5px;
   padding-bottom: 15px;
   padding-left: 5px;
-}
-
-body, main, footer {
-  padding: 10px;
 }
 
 img {
@@ -43,7 +45,7 @@ main {
   */
 footer {
   background-color: #e7ecee;
-  padding: 10px;
+  padding: 20px;
 }
 
 /**
@@ -57,7 +59,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #34444c;
+  color: #000000;
 }
 
 a:hover {
@@ -87,11 +89,12 @@ a.button {
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 500;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 50px;
   border-radius: 0px;
   transition: 0.2s opacity;
   transition-duration: 0.4s;
+  text-align: left;
 }
 
 a.button:hover {
@@ -100,10 +103,8 @@ a.button:hover {
 }
 
 /* typography */
-#hero {
-  margin: 0;
-  padding: 0.67em 0;
-  color: #e98e7c;
+font {
+  font-family: 'Work Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -125,6 +126,8 @@ h2 {
 h3 {
   font-size: 2.00em;
   font-weight: 700;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 
 h4 {
@@ -184,6 +187,25 @@ a:focus {
   color: #a8bbc5;
 }
 
+#hero {
+  font-size: 4em;
+  font-size: width 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0.67em 0;
+  color: #34444c;
+}
+
+#herocopy {
+  font-size: 2.0em;
+  font-size: width 100%;
+  text-align: left;
+  font-weight: 500;
+  margin: 0;
+  padding bottom: 1.67em 0;
+  color: #34444c;
+}
+
 #contact {
   padding: 55 10px;
 }
@@ -193,7 +215,10 @@ a:focus {
 }
 
 #overline {
-  color: green;
+  color: #34444c;
+  opacity: 80%;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 
 #caption {
@@ -202,5 +227,63 @@ a:focus {
   font-weight: 600;
 }
 
-#hyperlinkfooter {
+#imprint {
+  text-align: right;
+  padding: 10 50px;
+}
+
+/**
+   * Wrapper and Boxes
+   */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 670px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4em;
+    row-gap: 1em;
   }
+
+  .wrapperfooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50px;
+  }
+
+  @media only screen and (min-width: 670px) {
+    .wrapperfooter {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 5px;
+      row-gap: 1em;
+    }
+
+    .twowrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    @media only screen and (min-width: 670px) {
+      .twowrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5%;
+        row-gap: 1em;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 20.00%;
+        padding: 10px;
+      }
+      /* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
