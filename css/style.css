@@ -26,16 +26,17 @@ header {
   width: 100% text-align: center;
 }
 
-img {
-  width: 100%;
-}
-
 /**
  * Render the `main` element consistently in IE.
  */
 main {
   display: block;
 }
+
+img {
+  width: 100% ;
+}
+
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -276,7 +277,10 @@ a:focus {
       clear: both;
     }
 
-    .iconcontainer {
+    #imgicons {
+      width: 48px;
+      height: 48px;
+      padding: 50px;
       display: inline-block;
-      padding: 3em;
+      text-align: center;
     }
