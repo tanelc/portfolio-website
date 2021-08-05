@@ -5,123 +5,126 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap">
   <meta charset="utf-8">
   <meta name="author" content="Tania Elcome">
-  <meta name="description" content="Tania Elcome is a UX Designer with a background in Art and Creative Direction. Based in Hamburg, Germany">
+  <meta name="description" content="Tania Elcome is a UX Designer and Creative Director. Based in Hamburg, Germany">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
-  <title>About Tania Elcome: UX Designer and Creative Director </title>
+  <title>About Tania Elcome</title>
 </head>
 
 <body>
-  <header>
-    <a href="https://www.taniaelcome.de/">
-      <img src="img/elcomelogo.svg" alt="Logo Tania Elcome" width="300" height="100">
-    </a>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <!-- open row that holds (2) columns -->
-    <div>
-      <!-- open first column (used for image) -->
-      <picture>
-        <source srcset="img/about/tania_elcome_300x300.jpg" media="(max-width:767px)">
-        <img src="img/about/tania_elcome_600x600.jpg" alt="Tania Elcome UX Designer and Creative Director">
-      </picture>
-      <picture>
-        <source srcset="img/about/hamburg_300x200.jpg" media="(max-width:767px)">
-        <img src="img/about/hamburg_600x400.jpg" alt="Tania Elcome UX Designer and Creative Director based in Hamburg, Germany">
-      </picture>
-    </div><!-- end first column -->
-    <div>
-      <!-- open second column (used for text) -->
-      <p>As a UX designer I aim to improve peoples lives by creating both useful and usable services combined with my experience as a Creative Director.</p>
-      <br>
-      <h3>Experience</h3>
-      <p>since 2021 freelance UX Designer<br>
-        since 2021 Frontend Development Specialisation further training at Career Foundry<br>
-        since 2015 freelance Creative Director UX Design<br>
-        <br>
-        2020-2021 UX Design Further Training at Career Foundry<br>
-        2012-2015 Creative Director at VSF+P Hamburg, Germany<br>
-        2010-2012 freelance Senior Art Director, Switzerland<br>
-        2006-2010 Senior Art Director at favo, Scholz & Friends Switzerland<br>
-        2005-2006 Art Director at Red Rabbit Hamburg, Germany<br>
-        2002-2005 Graphic Designer at Feuer auf St.Pauli Hamburg, Germany<br>
-      </p>
-    </div>
-    <br>
-    <div>
-      <h4>Skills</h4>
-      <p>UXD<br>
-        Information Architecture, Wireframing, User Testing,Prototyping, UI Design<br><br>
-        Visual<br>
-        Sketching, Illustration, Photography,Video Editing<br><br>
-        Coding<br>
-        Basic HTML, Javascript, CSS<br><br>
-        Art Direction<br>
-        Campaign, Branding, Graphic Design</p>
-    </div>
-    <br>
-    <div>
-      <h4>Tools</h4>
-      <p>Adobe InDesign, Illustrator, Photoshop<br> Adobe XD, Figma, Sketch<br>PowerPoint, Keynote</p><br>
-    </div>
-    <div>
-      <a href="files/resume_taniaelcome.pdf" download>Download Resume</a>
-    </div><!-- end second column -->
-    <div>
-      <h4>When I’m not working</h4>
+  <div class="content">
+    <header>
+      <a href="https://www.taniaelcome.de/">
+        <img src="img/elcomelogo.svg" class="logo" alt="Logo Tania Elcome">
+      </a>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Work</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- open row that holds (2) columns for project -->
+      <div class="twowrapper">
+        <!-- open first column (used for image) -->
+        <div>
+          <picture>
+            <source srcset="img/about/tania_elcome_300x300.jpg" media="(max-width:767px)">
+            <img src="img/about/tania_elcome_600x600.jpg" alt="Tania Elcome UX Designer and Creative Director">
+          </picture>
+          <picture>
+            <source srcset="img/about/hamburg_300x200.jpg" media="(max-width:767px)">
+            <img src="img/about/hamburg_600x400.jpg" alt="Tania Elcome UX Designer and Creative Director based in Hamburg, Germany">
+          </picture>
+        </div><!-- end first column -->
+        <div>
+          <!-- open second column (used for text) -->
+          <p>As a UX designer I aim to improve peoples lives by creating both useful and usable services combined with my experience as a Creative Director.
+          </p>
+          <br>
+          <h4>Experience</h4>
+          <p>Since 2021 Freelance UX Designer<br>
+            Since 2021 Frontend Development Specialisation further training at Career Foundry<br>
+            Since 2015 Freelance Creative Director UX Design<br>
+            2020-2021 UX Design Further Training at Career Foundry<br>
+          </p>
+          <br>
+          <h4>Skills</h4>
+          <p><a id="caption">UXD</a><br>
+            Information Architecture, Wireframing, User Testing, Prototyping, UI Design<br><br>
+            <a id="caption">Visual</a><br>
+            Sketching, Illustration, Photography,Video Editing<br><br>
+            <a id="caption">Coding</a><br>
+            Basic HTML, Javascript, CSS<br><br>
+            <a id="caption">Art Direction</a><br>
+            Campaign, Branding, Graphic Design
+          </p>
+          <br>
+          <h4>Tools</h4>
+          <p>Adobe InDesign, Illustrator, Photoshop<br> Adobe XD, Figma, Sketch<br>PowerPoint, Keynote</p><br>
+          <a href="files/resumetaniaelcome.pdf"></a>
+            <a href="#" class="button">Download Resume</a>
+        </div><!-- end second column -->
+      </div>
+      <h2>When I’m not working</h2>
       <p>If you can’t find me at my computer, I’m either traveling, watching my tomatoes grow or cooking.</p>
-      <picture>
-        <source srcset="img/about/travel_300x300.jpg" media="(max-width:767px)">
-        <img src="img/about/travel_600x600.jpg" alt="On a Bus in Tibet">
-      </picture>
-      <picture>
-        <source srcset="img/about/tomatoes_300x300.jpg" media="(max-width:767px)">
-        <img src="img/about/tomatoes_600x600.jpg" alt="Green Tomatoes on my Balcony.">
-      </picture>
-      <picture>
-        <source srcset="img/about/cooking_300x300.jpg" media="(max-width:767px)">
-        <img src="img/about/cooking_600x600.jpg" alt="Veggies on the Table">
-      </picture>
-  </main>
-  <br>
-  <footer id="contact">
-    <span>
-      <h2>Say «Hi» or drop me a few lines to get in touch: <a href="+491512635430">+491512635430</a> or <a href="mailto:moin@taniaelcome.de?subject=Hi!">moin@taniaelcome.de</a></h2>
 
-    </span>
-    <span>
-      <a href="https://www.linkedin.com/in/elcome/">
-        <img src="img/linkedin.svg" alt="Linkedin Tania Elcome" width="32" height="32">
-      </a>
-      <a href="https://www.xing.com/profile/Tania_Elcome/cv">
-        <img src="img/xing.svg" alt="Xing Tania Elcome" width="32" height="32">
-      </a>
-      <a href="https://www.instagram.com/taniaelcome/">
-        <img src="img/instagram.svg" alt="Instagram Tania Elcome" width="32" height="32">
-      </a>
-    </span>
-    <br>
-
-    <div>
-      <p>
-        Office Tania Elcome<br>
-        Behnstr. 69, 22767 Hamburg, Germany</p>
-    </div>
-    <span>© Tania Elcome 2021</span> <span>Privacy Policy</span> <span>Legal</span>
-
-  </footer>
+      <!-- open row that holds (3) columns for project -->
+      <div class="wrapper">
+        <!-- open first column (used for image) -->
+        <div>
+          <picture>
+            <source srcset="img/about/travel_300x300.jpg" media="(max-width:767px)">
+            <img src="img/about/travel_600x600.jpg" alt="On a Bus in Tibet">
+            <center>
+              <p>On a Bus in Tibet</p>
+            </center>
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source srcset="img/about/tomatoes_300x300.jpg" media="(max-width:767px)">
+            <img src="img/about/tomatoes_600x600.jpg" alt="Green Tomatoes on my Balcony.">
+            <center>
+              <p>Beefsteak Tomatoes in the Making</p>
+            </center>
+          </picture>
+        </div>
+        <picture>
+          <source srcset="img/about/cooking_300x300.jpg" media="(max-width:767px)">
+          <img src="img/about/cooking_600x600.jpg" alt="Veggies on the Table">
+          <center>
+            <p>Ready for Action</p>
+          </center>
+        </picture>
+      </div>
+    </main>
+    <footer id="contact">
+      <h2>Say «Hi» or drop me a line to get in touch: <a href="+491512635430">+491512635430</a> or <a href="mailto:moin@taniaelcome.de?subject=Hi!">moin@taniaelcome.de</a></h2>
+      <div>
+        <span class="iconcontainer">
+          <a href="https://www.linkedin.com/in/elcome/"><img src="img/linkedin.svg" id="imgicons" alt="Linkedin Tania Elcome"></a>
+          <a href="https://www.xing.com/profile/Tania_Elcome/cv"><img src="img/xing.svg" id="imgicons" alt="Xing Tania Elcome"></a>
+          <a href="https://www.instagram.com/taniaelcome/"><img src="img/instagram.svg" id="imgicons" alt="Instagram Tania Elcome"></a>
+        </span>
+      </div>
+      <p><a id="caption">Office</a> Tania Elcome<br>
+      Behnstr. 69, 22767 Hamburg, Germany</p>
+      <p id="imprint">© Tania Elcome 2021 Privacy Policy Legal</p>
+    </footer>
+  </div>
 </body>
-
 </html>
