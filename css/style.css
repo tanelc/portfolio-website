@@ -52,9 +52,9 @@ text-decoration : none;
 background-color : #e96166;
 color : #ffffff;
 font-weight : 500;
-padding : 15px;
+padding : 10px;
 margin-bottom : 50px;
-border-radius : 0;
+border-radius : 60px;
 transition : opacity 0.2s;
 transition-duration : 0.4s;
 text-align : left;
@@ -99,11 +99,6 @@ p {
 font-family : 'Work Sans', sans-serif;
 font-size : 16px;
 font-weight : 400;
-padding : 0;
-}
-.logo {
-max-width : 250px;
-text-align : left !important;
 padding : 0;
 }
 nav > ul {
@@ -170,17 +165,17 @@ text-align : right;
 }
 .wrapper {
 display : grid;
-grid-template-columns : 1fr;
-}
-@media only screen and (min-width: 670px) {
-.wrapper {
-display : grid;
 grid-template-columns : repeat(3,1fr);
 column-gap : 1.5em;
 row-gap : 1em;
 }
+@media only screen and (min-width: 670px) {
+.wrapper footer {
+display : flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr
 }
-
 .twowrapper {
 display : grid;
 grid-template-columns : repeat(2,1fr);
@@ -222,4 +217,9 @@ font-size : 16px;
 font-weight : 400;
 text-align : center;
 color : #34444c;
+}
+.logo {
+max-width : 250px;
+text-align : left !important;
+padding : 0;
 }
