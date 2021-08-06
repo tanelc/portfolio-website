@@ -46,18 +46,17 @@ color : #a8bbc5;
 }
 a.button {
 font-family : 'Work Sans', sans-serif;
-line-height : 1.4;
+text-align : center;
 display : inline-block;
 text-decoration : none;
 background-color : #e96166;
 color : #ffffff;
 font-weight : 500;
-padding : 10px;
+padding : 10px 20px 10px 20px;
 margin-bottom : 50px;
 border-radius : 60px;
 transition : opacity 0.2s;
 transition-duration : 0.4s;
-text-align : left;
 }
 a.button:hover {
 background-color : #a8bbc5;
@@ -130,13 +129,13 @@ a:focus {
 color : #a8bbc5;
 }
 #hero {
-font-size : 3.5em;
+font-size : 3.0em;
 text-align : left;
 color : #34444c;
 margin : 0;
 }
 #herocopy {
-font-size : 1.5em;
+font-size : 1.25em;
 text-align : left;
 font-weight : 500;
 margin : 0;
@@ -169,7 +168,7 @@ grid-template-columns : repeat(3,1fr);
 column-gap : 1.5em;
 row-gap : 1em;
 }
-@media only screen and (min-width: 670px) {
+@media only screen and (min-width: 670px){
 .wrapper footer {
 display : flex;
   align-items: center;
@@ -219,7 +218,8 @@ text-align : center;
 color : #34444c;
 }
 .logo {
-max-width : 250px;
-text-align : left !important;
+width : 250px;
+height: auto;
+text-align : left;
 padding : 0;
 }
