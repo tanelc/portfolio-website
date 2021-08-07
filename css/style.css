@@ -5,7 +5,6 @@ html {
 .content {
   max-width: 1440px;
   margin: auto;
-  padding: 10px;
 }
 
 header {
@@ -19,8 +18,8 @@ header {
 
 main {
   display: block;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 footer {
@@ -38,40 +37,52 @@ a {
   text-decoration: none;
 }
 
+a.button {
+  font-family: 'Work Sans', sans-serif;
+}
+
 a:visited {
-  color: #000000;
+  color: white;
 }
 
 a:hover {
-  color: #e96166;
+  color: #000000;
 }
 
 a:active {
-  color: #34444c;
+  color: #000000;
 }
 
 a:focus {
   color: #a8bbc5;
 }
 
-a.button {
-  font-family: 'Work Sans', sans-serif;
-  text-align: center;
+.button {
   display: inline-block;
-  text-decoration: none;
   background-color: #e96166;
-  color: #ffffff;
+  color: white;
   font-weight: 500;
+  text-decoration: none;
   padding: 10px 20px 10px 20px;
+  text-align: center;
   margin-bottom: 50px;
   border-radius: 60px;
-  transition: opacity 0.2s;
   transition-duration: 0.4s;
+  transition-property: background-color;
 }
 
-a.button:hover {
-  background-color: #a8bbc5;
+.button:hover {
+  background-color: #ab4448;
   color: white;
+}
+
+.case {
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+.case:hover {
+  opacity: 0.4;
 }
 
 font {
@@ -90,13 +101,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2.50em;
+  font-size: 1.80em;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 2.00em;
+  font-size: 1.75em;
   font-weight: 700;
   margin-top: -10px;
   margin-bottom: -10px;
@@ -134,7 +145,7 @@ nav>ul>li>a {
   padding: 0 30px;
   text-transform: uppercase;
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.50em;
+  font-size: 1.25em;
   font-weight: 400;
   color: #000000;
 }
@@ -144,7 +155,7 @@ nav>ul>li>a:visited a:visited {
 }
 
 a:hover {
-  color: #a8bbc5;
+  color: #e96166;
 }
 
 a:active {
@@ -156,10 +167,16 @@ a:focus {
 }
 
 #hero {
-  font-size: 3.0em;
+  font-size: 2.25em;
   text-align: left;
   color: #34444c;
-  margin: 0;
+  margin: 0px;
+}
+
+#herospan {
+  font-size: 2.25em;
+  display: block;
+  margin: 0px;
 }
 
 #herocopy {
@@ -167,8 +184,6 @@ a:focus {
   text-align: left;
   font-weight: 500;
   margin: 0;
-  padding-left: 0;
-  padding-right: 0;
   padding-top: 20px;
   padding-bottom: 40px;
   color: #34444c;
@@ -181,7 +196,7 @@ a:focus {
 #overline {
   color: #34444c;
   opacity: 80%;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 4px;
 }
 
@@ -193,6 +208,15 @@ a:focus {
 
 #imprint {
   text-align: right;
+  display: flex-end;
+  width: 100%;
+  margin: 0;
+}
+
+#adresse {
+  text-align: left;
+  margin: 0;
+  display: flex-end;
 }
 
 .wrapper, .twowrapper {
@@ -201,7 +225,6 @@ a:focus {
 }
 
 @media only screen and (min-width: 670px) {
-
   .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -215,6 +238,7 @@ a:focus {
     justify-content: center;
     grid-template-columns: 1fr;
   }
+
   .twowrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -222,50 +246,121 @@ a:focus {
     row-gap: 1em;
   }
 
-.column {
-  width: 20.00%;
-  padding: 10px;
-}
+  .column {
+    width: 20.00%;
+    padding: 10px;
+  }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-#imgicons {
-  width: 40px;
-  height: 40px;
-  padding: 30px;
-  display: inline-block;
-  text-align: center;
-}
+  #imgicons {
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+  }
 
-.iconcontainer {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-}
+  .iconcontainer {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
 
-#quote {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 3.5em;
-  font-weight: 400;
-  text-align: center;
-  color: #34444c;
-}
+  #quote {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3.5em;
+    font-weight: 400;
+    text-align: center;
+    color: #34444c;
+  }
 
-#quotecaption {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  color: #34444c;
-}
+  #quotecaption {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #34444c;
+  }
 
-.logo {
-  display: flex;
-  justify-self: first;
-  width: 210px;
-  height: auto;
-}
+  .logo {
+    display: flex;
+    justify-self: first;
+    width: 210px;
+    height: auto;
+  }
+
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+  @media only screen and (min-width: 640px) {
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+  }
+
+  /* ==============================
+Large devices (1024px or larger)
+================================= */
+  @media only screen and (min-width: 1024px) {
+    header {
+      text-align: unset;
+      margin: 24px;
+    }
+
+    h2 {
+      font-size: 2.50em;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    #hero {
+      font-size: 3.5em;
+    }
+
+    #herospan {
+      font-size: 3.5em;
+    }
+
+    #herocopy {
+      font-size: 1.75em;
+    }
+
+    main {
+      display: block;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .logo {
+      display: flex;
+      justify-self: first;
+      width: 280px;
+      height: auto;
+    }
+
+    h3 {
+      font-size: 2.00em;
+    }
+
+    /* ==============================
+X-large devices (1440px or larger)
+================================= */
+    @media only screen and (min-width: 1440px) {
+      .logo {
+        display: flex;
+        justify-self: first;
+        width: 300px;
+        height: auto;
+      }
+    }
