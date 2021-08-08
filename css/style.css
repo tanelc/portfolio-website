@@ -30,6 +30,7 @@ footer {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 a {
@@ -135,7 +136,7 @@ p {
 nav {
   width: auto;
   margin-top: 4px;
-  z-index: 1;
+
 }
 
 nav>ul {
@@ -146,13 +147,15 @@ nav>ul {
 
 nav>ul>li {
   display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 nav>ul>li>a {
-  padding: 0 30px;
+  padding: 0 5px;
   text-transform: uppercase;
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.25em;
+  font-size: 18px;
   font-weight: 400;
   color: #34444c;
 }
@@ -163,6 +166,7 @@ nav>ul>li>a:visited a:visited {
 
 a:hover {
   color: #e96166;
+  font-weight: 600;
 }
 
 a:active {
@@ -178,14 +182,12 @@ a:focus {
   text-align: left;
   color: #34444c;
   margin: 0px;
-  z-index: 2;
 }
 
 #herospan {
   font-size: 2.25em;
   display: block;
   margin: 0px;
-  z-index: 2;
 }
 
 #herocopy {
@@ -196,7 +198,6 @@ a:focus {
   padding-top: 20px;
   padding-bottom: 40px;
   color: #34444c;
-  z-index: 2;
 }
 
 #opener {
@@ -299,7 +300,6 @@ a:focus {
     justify-self: first;
     width: 210px;
     height: auto;
-    z-index: 0;
   }
 
   .berlin-illustration {
@@ -364,6 +364,21 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+  header {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+  }
+
+  header-style {
+    text-align: unset;
+    max-width: 1440px;
+    margin: auto;
+  }
 }
 
 /* ==============================
@@ -381,6 +396,19 @@ Large devices (1024px or larger)
     margin-top: 4px;
   }
 
+  nav>ul>li>a {
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #34444c;
+  }
+.spacer
+  {
+      width: 100%;
+      height: 330px;
+  }
   h2 {
     font-size: 2.50em;
     font-weight: 800;
@@ -440,13 +468,6 @@ X-large devices (1440px or larger)
       grid-template-columns: repeat(3, 1fr);
       column-gap: 1.5em;
       row-gap: 1em;
-    }
-
-    .wrapper footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      grid-template-columns: 1fr;
     }
 
     .twowrapper {
