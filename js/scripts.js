@@ -1,3 +1,3 @@
 <script>
-  alert("Hello");
+cosole.log("Welcome!");
 </script>
