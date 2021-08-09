@@ -1,3 +1,1 @@
-<script>
-cosole.log("Welcome!");
-</script>
+console.log("Welcome!");
