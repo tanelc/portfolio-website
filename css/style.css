@@ -355,7 +355,6 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
   }
 
   header {
@@ -380,7 +379,6 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   header {
     text-align: unset;
-    margin: 24px;
   }
 
   nav {
