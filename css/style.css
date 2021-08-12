@@ -7,6 +7,13 @@ html {
   margin: auto;
 }
 
+.logo {
+  display: flex;
+  justify-self: first;
+  max-width: 180px;
+  height: auto;
+}
+
 header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -35,6 +42,7 @@ a {
   color: #34444c;
   text-decoration: none;
 }
+
 a:visited {
   color: #34444c;
 }
@@ -133,7 +141,6 @@ p {
 
 nav {
   margin-top: 4px;
-
 }
 
 nav>ul {
@@ -141,8 +148,6 @@ nav>ul {
   padding: 0;
   margin: 0;
 }
-
-
 
 nav>ul>li>a {
   padding: 0 5px;
@@ -157,9 +162,12 @@ nav>ul>li>a:visited a:visited {
   color: #34444c;
 }
 
+nav>ul>li>a:active a:active {
+  color: #34444c;
+}
+
 a:hover {
   color: #e96166;
-  font-weight: 600;
 }
 
 a:active {
@@ -199,7 +207,7 @@ a:focus {
 
 #overline {
   color: #34444c;
-  opacity: 80%;
+  opacity: 70%;
   margin-top: 10px;
   margin-bottom: 4px;
 }
@@ -220,9 +228,27 @@ a:focus {
   display: flex-end;
 }
 
+#underline {
+  text-decoration: underline;
+}
+
 .wrapper, .twowrapper {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+#imgicons {
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  display: inline-block;
+  text-align: center;
+}
+
+.iconcontainer {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
 }
 
 @media only screen and (min-width: 670px) {
@@ -251,21 +277,6 @@ a:focus {
     clear: both;
   }
 
-  #imgicons {
-    width: 40px;
-    height: 40px;
-    padding: 30px;
-    display: inline-block;
-    text-align: center;
-  }
-
-  .iconcontainer {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-
-  }
-
   #quote {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5em;
@@ -288,18 +299,18 @@ a:focus {
     max-width: 150px;
     height: auto;
   }
-  .spacer {
-        width: 100%;
-        height: 10px;
-    }
 
-}
+  .spacer {
+    width: 100%;
+    height: 150px;
+  }
+
 .navtoggle li:not(:last-child) {
-display: none;
+  display: none;
 }
 
 .navtoggle li:last-child {
-display: inline-block;
+  display: inline-block;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -316,13 +327,14 @@ display: inline-block;
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 2px solid #e96166;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -350,26 +362,30 @@ Medium devices (640px and larger)
     margin: auto;
   }
 
-.logo {
-  max-width: 210px;
+  .logo {
+    margin-left: 8px;
+    max-width: 210px;
   }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul {
+    padding: 0;
+    margin: 0 0;
+    padding-right: 18px;
+  }
 }
 
-.navtoggle li:last-child {
-  display: none;
-}
-
-nav>ul>li {
-  display: inline-block;
-}
-
-nav>ul {
-  padding: 0;
-margin: 1em 0;
-}
-}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -436,6 +452,7 @@ Large devices (1024px or larger)
   h3 {
     font-size: 2.00em;
   }
+
   .logo {
     max-width: 260px;
     padding-left: 24px;
@@ -443,32 +460,31 @@ Large devices (1024px or larger)
   }
 
   .spacer {
-        width: 100%;
-        height: 190px;
-    }
+    width: 100%;
+    height: 190px;
   }
+}
 
-  /* ==============================
+/* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {
-
-    .wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 1.5em;
-      row-gap: 1em;
-    }
-
-    .twowrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 1.5em;
-      row-gap: 1em;
-    }
-    .spacer {
-          width: 100%;
-          height: 190px;
-      }
-
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5em;
+    row-gap: 1em;
   }
+
+  .twowrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5em;
+    row-gap: 1em;
+  }
+
+  .spacer {
+    width: 100%;
+    height: 190px;
+  }
+}

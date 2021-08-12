@@ -11,26 +11,24 @@
   <meta name="description" content="Tania Elcome is a UX Designer and Creative Director. Based in Hamburg, Germany">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
-  <title>Tania Elcome</title>
+  <title>Tania Elcome: UX Designer and Creative Director</title>
+  <script src="https://kit.fontawesome.com/68160408ab.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <img class="logo" src="img/elcomelogo.svg" alt="Logo Tania Elcome">
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Work</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="img/elcomelogo.svg" alt="Logo Tania Elcome UX CD">
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          </ul>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </nav>
+      </div>
     </div>
   </header>
   <div class="spacer">
