@@ -11,26 +11,24 @@
   <meta name="description" content="Tania Elcome is a UX Designer and Creative Director. Based in Hamburg, Germany">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
-  <title>About Tania Elcome</title>
+  <title>Tania Elcome: UX Designer and Creative Director</title>
+  <script src="https://kit.fontawesome.com/68160408ab.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <img class="logo" src="img/elcomelogo.svg" alt="Logo Tania Elcome">
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Work</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="img/elcomelogo.svg" alt="Logo Tania Elcome UX CD">
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          </ul>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </nav>
+      </div>
     </div>
   </header>
   <div class="spacer">
@@ -41,100 +39,72 @@
     <div class="twowrapper">
       <!-- open first column (used for image) -->
       <div>
-        <picture>
-          <source srcset="img/about/tania_elcome_300x300.jpg" media="(max-width:767px)">
-          <img src="img/about/tania_elcome_600x600.jpg" alt="Tania Elcome UX Designer and Creative Director">
-        </picture>
-        <picture>
-          <source srcset="img/about/hamburg_300x200.jpg" media="(max-width:767px)">
-          <img src="img/about/hamburg_600x400.jpg" alt="Tania Elcome UX Designer and Creative Director based in Hamburg, Germany">
-        </picture>
+        <picture><source srcset="img/about/tania_elcome_300x300.jpg" media="(max-width:767px)"> <img src="img/about/tania_elcome_600x600.jpg" alt="Tania Elcome UX Designer and Creative Director"></picture> <picture><source srcset="img/about/hamburg_300x200.jpg" media="(max-width:767px)"> <img src="img/about/hamburg_600x400.jpg" alt="Tania Elcome UX Designer and Creative Director based in Hamburg, Germany"></picture>
       </div><!-- end first column -->
       <div>
         <!-- open second column (used for text) -->
-        <p style="margin-top: 0px;">As a UX designer I aim to improve peoples lives by creating both useful and usable services combined with my experience as a Creative Director. I am based in Hamburg, Germany.
-        </p>
-        <br>
+        <p style="margin-top: 0px;">As a UX designer I aim to improve peoples lives by creating both useful and usable services combined with my experience as a Creative Director. I am based in Hamburg, Germany.</p><br>
         <h4>Experience</h4>
         <p>08/2021: Specialisation Frontend Development, Career Foundry<br>
-          2020-2021: UX Design, Career Foundry<br>
-          Since 2015: Freelance Creative Director<br>
-        </p>
-        <br>
+        2020-2021: UX Design, Career Foundry<br>
+        Since 2015: Freelance Creative Director<br></p><br>
         <h4>Skills</h4>
         <p><a id="caption">UXD</a><br>
-          Information Architecture, Wireframing, User Testing, Prototyping, UI Design<br><br>
-          <a id="caption">Visual</a><br>
-          Sketching, Illustration, Photography, Video Editing<br><br>
-          <a id="caption">Web Development</a><br>
-          Basic HTML, Javascript (jQuery), CSS 3<br><br>
-          <a id="caption">Art Direction</a><br>
-          Campaign, Branding, Graphic Design
-        </p>
+        Information Architecture, Wireframing, User Testing, Prototyping, UI Design<br>
         <br>
+        <a id="caption">Visual</a><br>
+        Sketching, Illustration, Photography, Video Editing<br>
+        <br>
+        <a id="caption">Web Development</a><br>
+        Basic HTML, Javascript (jQuery), CSS 3<br>
+        <br>
+        <a id="caption">Art Direction</a><br>
+        Campaign, Branding, Graphic Design</p><br>
         <h4>Tools</h4>
         <p><a id="caption">UXD</a><br>
-          Adobe XD, Figma, Sketch<br><br>
-          <a id="caption">Visual</a><br>
-          Adobe InDesign, Illustrator, Photoshop, PowerPoint, Keynote, After Effects<br><br>
-          <a id="caption">Web Development</a><br>
-          Atom, Brackets<br><br>
-        </p>
-
-        <a href="files/resumetaniaelcome.pdf"></a>
-        <a href="#" class="button">Download Resume</a>
+        Adobe XD, Figma, Sketch<br>
+        <br>
+        <a id="caption">Visual</a><br>
+        Adobe InDesign, Illustrator, Photoshop, PowerPoint, Keynote, After Effects<br>
+        <br>
+        <a id="caption">Web Development</a><br>
+        Atom, Brackets<br>
+        <br></p><a href="files/resumetaniaelcome.pdf"></a> <a href="#" class="button">Download Resume</a>
       </div><!-- end second column -->
     </div>
     <h2>When I’m not working</h2>
-    <p>If you can’t find me at my computer, I’m either traveling, watching my tomatoes grow or cooking.</p>
-
-    <!-- open row that holds (3) columns for project -->
+    <p>If you can’t find me at my computer, I’m either traveling, watching my tomatoes grow or cooking.</p><!-- open row that holds (3) columns for project -->
     <div class="wrapper">
       <!-- open first column (used for image) -->
       <div>
-        <picture>
-          <source srcset="img/about/travel_300x300.jpg" media="(max-width:767px)">
-          <img src="img/about/travel_600x600.jpg" alt="On a Bus in Tibet">
-          <center>
-            <p>On a Bus in Tibet</p><br>
-          </center>
-        </picture>
+        <picture><source srcset="img/about/travel_300x300.jpg" media="(max-width:767px)"> <img src="img/about/travel_600x600.jpg" alt="On a Bus in Tibet"></picture>
+        <center>
+          <p><picture>On a Bus in Tibet</picture></p><picture><br></picture>
+        </center>
       </div>
       <div>
-        <picture>
-          <source srcset="img/about/tomatoes_300x300.jpg" media="(max-width:767px)">
-          <img src="img/about/tomatoes_600x600.jpg" alt="Green Tomatoes on my Balcony.">
-          <center>
-            <p>Beefsteak Tomatoes in the Making</p>
-          </center>
-        </picture>
-      </div>
-      <picture>
-        <source srcset="img/about/cooking_300x300.jpg" media="(max-width:767px)">
-        <img src="img/about/cooking_600x600.jpg" alt="Veggies on the Table">
+        <picture><source srcset="img/about/tomatoes_300x300.jpg" media="(max-width:767px)"> <img src="img/about/tomatoes_600x600.jpg" alt="Green Tomatoes on my Balcony."></picture>
         <center>
-          <p>Ready for Action</p>
+          <p><picture>Beefsteak Tomatoes in the Making</picture></p>
         </center>
-      </picture>
+      </div><picture><source srcset="img/about/cooking_300x300.jpg" media="(max-width:767px)"> <img src="img/about/cooking_600x600.jpg" alt="Veggies on the Table"></picture>
+      <center>
+        <p><picture>Ready for Action</picture></p>
+      </center>
     </div>
   </main>
   <footer id="contact">
-    <h2>Let's get in touch.<br><a href="mailto:moin@taniaelcome.de?subject=Hi!">Write a mail and drop me a line <a href="+491512635430">– or say «Hi» +491512635430</a></a></h2>
+    <h2>Let's get in touch.<br>
+    <a href="mailto:moin@taniaelcome.de?subject=Hi!">Drop me a line and send me a <u>mail</u></a> <a href="+491512635430">or <u>call</u> to say «Hi» +491512635430</a></h2>
     <div>
-      <span class="iconcontainer">
-        <a href="https://www.linkedin.com/in/elcome/"><img src="img/linkedin.svg" id="imgicons" alt="Linkedin Tania Elcome"></a>
-        <a href="https://www.xing.com/profile/Tania_Elcome/cv"><img src="img/xing.svg" id="imgicons" alt="Xing Tania Elcome"></a>
-        <a href="https://www.instagram.com/taniaelcome/"><img src="img/instagram.svg" id="imgicons" alt="Instagram Tania Elcome"></a>
-      </span>
+      <span class="iconcontainer"><a href="https://www.linkedin.com/in/elcome/"><img src="img/linkedin.svg" id="imgicons" alt="Linkedin Tania Elcome"></a> <a href="https://www.xing.com/profile/Tania_Elcome/cv"><img src="img/xing.svg" id="imgicons" alt="Xing Tania Elcome"></a> <a href="https://www.instagram.com/taniaelcome/"><img src="img/instagram.svg" id="imgicons" alt="Instagram Tania Elcome"></a></span>
     </div>
-    <p id="adresse"><a id="caption">Office</a> Tania Elcome<br>
+    <div>
+      <p id="adresse"><a id="caption">Office</a> Tania Elcome<br>
       Behnstr. 69, 22767 Hamburg, Germany</p>
-    <span>
-      <p id="imprint">© Tania Elcome 2021</p>
-    </span>
-  </div>
+      <p id="imprint"><span>© Tania Elcome 2021</span></p>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
-
-  </body>
-
-  </html>
+</body>
+</html>
