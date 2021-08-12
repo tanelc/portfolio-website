@@ -207,7 +207,7 @@ a:focus {
 
 #overline {
   color: #34444c;
-  opacity: 70%;
+  opacity: 80%;
   margin-top: 10px;
   margin-bottom: 4px;
 }
@@ -228,27 +228,9 @@ a:focus {
   display: flex-end;
 }
 
-#underline {
-  text-decoration: underline;
-}
-
 .wrapper, .twowrapper {
   display: grid;
   grid-template-columns: 1fr;
-}
-
-#imgicons {
-  width: 40px;
-  height: 40px;
-  padding: 12px;
-  display: inline-block;
-  text-align: center;
-}
-
-.iconcontainer {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
 }
 
 @media only screen and (min-width: 670px) {
@@ -277,6 +259,20 @@ a:focus {
     clear: both;
   }
 
+  #imgicons {
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .iconcontainer {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+
   #quote {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5em;
@@ -302,8 +298,9 @@ a:focus {
 
   .spacer {
     width: 100%;
-    height: 150px;
+    height: 10px;
   }
+}
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -363,7 +360,6 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    margin-left: 8px;
     max-width: 210px;
   }
 
@@ -381,8 +377,7 @@ Medium devices (640px and larger)
 
   nav>ul {
     padding: 0;
-    margin: 0 0;
-    padding-right: 18px;
+    margin: 1em 0;
   }
 }
 
