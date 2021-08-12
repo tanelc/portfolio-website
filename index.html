@@ -12,25 +12,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
   <title>Tania Elcome: UX Designer and Creative Director</title>
+  <script src="https://kit.fontawesome.com/68160408ab.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <img class="logo" src="img/elcomelogo.svg" alt="Logo Tania Elcome">
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Work</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="img/elcomelogo.svg" alt="Logo Tania Elcome UX CD">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Work</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li><a href="#contact">Contact<onclick="menuToggle()"</a>
+            </li>
+          </ul>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </nav>
+      </div>
     </div>
   </header>
   <div class="spacer">
@@ -46,8 +49,7 @@
         <!-- open first column (used for image) -->
         <div>
           <a href="ezee.html">
-            <picture class="case"><img src="img/ezee/ezee_smiley_600x600.svg" width="280" height="280" style="background-color:#9ac98f" alt="UX Design Case study ezee vegan app An application for vegan eating and nutrition.">
-            </picture>
+            <picture class="case"><img src="img/ezee/ezee_smiley_600x600.svg" width="280" height="280" style="background-color:#9ac98f" alt="UX Design Case study ezee vegan app An application for vegan eating and nutrition."></picture>
           </a>
           <h5 id="overline">UX Design</h5>
           <h3>ezee vegan app</h3><!-- heading for the project -->
@@ -74,8 +76,8 @@
       </div>
     </main>
     <footer id="contact">
-        <h2>Let's get in touch.<br><a href="mailto:moin@taniaelcome.de?subject=Hi!"></a>Write a mail and drop me a line <a href="+491512635430">or say «Hi» +491512635430</a></h2>
-              <div>
+      <h2>Let's get in touch.<br><a href="mailto:moin@taniaelcome.de?subject=Hi!"></a>Write a mail and drop me a line <a href="+491512635430">or say «Hi» +491512635430</a></h2>
+      <div>
         <span class="iconcontainer">
           <a href="https://www.linkedin.com/in/elcome/"><img src="img/linkedin.svg" id="imgicons" alt="Linkedin Tania Elcome"></a>
           <a href="https://www.xing.com/profile/Tania_Elcome/cv"><img src="img/xing.svg" id="imgicons" alt="Xing Tania Elcome"></a>

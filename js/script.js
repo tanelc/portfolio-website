@@ -1,1 +1,4 @@
-console.log("Welcome!");
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  x.className += ' responsive';
+}
