@@ -249,6 +249,39 @@ a:focus {
   text-align: center;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li:last-child {
+    display: inline-block;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 2px transparent;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 
 @media only screen and (min-width: 670px) {
   .wrapper {
@@ -306,38 +339,7 @@ a:focus {
   }
 }
 
-.navtoggle li:not(:last-child) {
-  display: none;
-}
 
-.navtoggle li:last-child {
-    display: inline-block;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 10px;
-  top: 2px;
-  font-size: 20px;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  padding: 10px 0;
-  border-top: 2px transparent;
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -479,7 +481,7 @@ Large devices (1024px or larger)
     width: 100%;
     height: 190px;
   }
-  
+
   #imgicons {
     width: 40px;
     height: 40px;
