@@ -191,14 +191,14 @@ a:focus {
 }
 
 #hero {
-  font-size: 2.25em;
+  font-size: 2.00em;
   text-align: left;
   color: #34444c;
   margin: 0px;
 }
 
 #herospan {
-  font-size: 2.25em;
+  font-size: 2.00em;
   display: block;
   margin: 0px;
 }
@@ -292,6 +292,7 @@ a:focus {
   display: block;
   padding: 10px 0;
   border-top: 2px;
+  background-color: white;
 }
 
 .navtoggle.responsive li:last-child {
@@ -364,6 +365,14 @@ Medium devices (640px and larger)
     content: "";
     display: table;
     clear: both;
+  }
+
+  #herospan {
+    font-size: 2.75em;
+  }
+
+  #hero {
+    font-size: 2.75em;
   }
 
   #quote {
