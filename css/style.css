@@ -328,7 +328,7 @@ a:focus {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 2px solid #e96166;
+  border-top: 2px transparent;
 }
 
 .navtoggle.responsive li:last-child {
