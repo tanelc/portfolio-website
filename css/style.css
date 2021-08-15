@@ -34,9 +34,7 @@ main {
 footer {
   background-color: #e7ecee;
   padding: 10px;
-  margin-top: 20px
-  overflow-wrap: break-word;
-
+  margin-top: 20px overflow-wrap: break-word;
 }
 
 img {
@@ -103,7 +101,7 @@ font {
   font-family: 'Work Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, h6, p {
   font-family: 'Work Sans', sans-serif;
   line-height: 1.4;
   color: #34444c;
@@ -137,6 +135,13 @@ h5 {
   font-size: 1.00em;
   font-weight: 500;
   margin-top: 0;
+}
+
+h6 {
+  font-size: 0.8em;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-top: 0px;
 }
 
 p {
@@ -226,12 +231,18 @@ a:focus {
 }
 
 #imprint {
+  font-family: 'Work Sans', sans-serif;
   text-align: right;
+  position: bottom;
+  text-align: bottom;
   margin-bottom: 6px;
 }
 
 #adresse {
+  font-family: 'Work Sans', sans-serif;
   text-align: left;
+  position: bottom;
+  text-align: bottom;
   margin-bottom: 6px;
 }
 
@@ -259,7 +270,7 @@ a:focus {
 }
 
 .navtoggle li:last-child {
-    display: inline-block;
+  display: inline-block;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -280,7 +291,7 @@ a:focus {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 2px transparent;
+  border-top: 2px;
 }
 
 .navtoggle.responsive li:last-child {
@@ -289,16 +300,13 @@ a:focus {
 
 .spacer {
   width: 100%;
-  height: 10px;
+  height: 20px;
 }
-
 
 .footerspacer {
   width: 100%;
   height: 40px;
 }
-
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -322,6 +330,7 @@ Medium devices (640px and larger)
     border-color: #e96166;
     border-width: 100%;
   }
+
   .logo {
     max-width: 210px;
   }
@@ -331,6 +340,7 @@ Medium devices (640px and larger)
     max-width: 1440px;
     margin: auto;
   }
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -356,7 +366,6 @@ Medium devices (640px and larger)
     clear: both;
   }
 
-
   #quote {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5em;
@@ -377,6 +386,10 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
+  .navtoggle.responsive nav {
+    padding: 0px 0 0;
+  }
+
   .navtoggle li:last-child {
     display: none;
   }
@@ -388,141 +401,138 @@ Medium devices (640px and larger)
   .spacer {
     width: 100%;
     height: 150px;
-}
-
-.footerspacer {
-  width: 100%;
-  height: 70px;
-}
-
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-  header {
-    height: 120px;
-    text-align: unset;
-    border-bottom: 2px solid;
-    border-color: #e96166;
-    border-width: 100%;
-    border-spacing: 0 50px;
   }
-
-  .content {
-    margin: 30px;
-  }
-
-  nav {
-    width: auto;
-    text-align: center;
-    margin-top: 4px;
-  }
-
-  nav>ul>li>a {
-    padding: 0 30px;
-    text-transform: uppercase;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.25em;
-    font-weight: 400;
-    color: #34444c;
-  }
-
-  h2 {
-    font-size: 2.50em;
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  #hero {
-    font-size: 3.5em;
-  }
-
-  #herospan {
-    font-size: 3.5em;
-  }
-
-  #herocopy {
-    font-size: 1.75em;
-  }
-
-  #caption {
-    font-size: 18px;
-  }
-
-  main {
-    display: block;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 35px;
-  }
-
-  .logo {
-    display: flex;
-    justify-self: first;
-    width: 280px;
-    height: auto;
-  }
-
-  h2 {
-    font-size: 2.60em;
-  }
-
-  h3 {
-    font-size: 2.00em;
-  }
-
-  .logo {
-    max-width: 260px;
-    padding-left: 24px;
-    padding-top: 20px;
-  }
-
-  .spacer {
-    width: 100%;
-    height: 190px;
-  }
-
 
   .footerspacer {
     width: 100%;
-    height: 100px;
+    height: 70px;
   }
 
-  #imgicons {
-    width: 40px;
-    height: 40px;
-    padding: 30px;
-    display: inline-block;
-    text-align: center;
-  }
-}
+  /* ==============================
+Large devices (1024px or larger)
+================================= */
+  @media only screen and (min-width: 1024px) {
+    header {
+      height: 120px;
+      text-align: unset;
+      border-bottom: 2px solid;
+      border-color: #e96166;
+      border-width: 100%;
+      border-spacing: 0 50px;
+    }
 
-/* ==============================
+    .content {
+      margin: 30px;
+    }
+
+    nav {
+      width: auto;
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    nav>ul>li>a {
+      padding: 0 30px;
+      text-transform: uppercase;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 1.25em;
+      font-weight: 400;
+      color: #34444c;
+    }
+
+    h2 {
+      font-size: 2.50em;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    #hero {
+      font-size: 3.5em;
+    }
+
+    #herospan {
+      font-size: 3.5em;
+    }
+
+    #herocopy {
+      font-size: 1.75em;
+    }
+
+    #caption {
+      font-size: 18px;
+    }
+
+    main {
+      display: block;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 35px;
+    }
+
+    .logo {
+      display: flex;
+      justify-self: first;
+      width: 280px;
+      height: auto;
+    }
+
+    h2 {
+      font-size: 2.60em;
+    }
+
+    h3 {
+      font-size: 2.00em;
+    }
+
+    .logo {
+      max-width: 260px;
+      padding-left: 24px;
+      padding-top: 20px;
+    }
+
+    .spacer {
+      width: 100%;
+      height: 190px;
+    }
+
+    .footerspacer {
+      width: 100%;
+      height: 100px;
+    }
+
+    #imgicons {
+      width: 40px;
+      height: 40px;
+      padding: 30px;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1.5em;
-    row-gap: 1em;
-  }
+  @media only screen and (min-width: 1440px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1.5em;
+      row-gap: 1em;
+    }
 
-  .twowrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5em;
-    row-gap: 1em;
-  }
+    .twowrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.5em;
+      row-gap: 1em;
+    }
 
-  .spacer {
-    width: 100%;
-    height: 190px;
+    .spacer {
+      width: 100%;
+      height: 190px;
+    }
   }
-
-}
