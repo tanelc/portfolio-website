@@ -331,6 +331,15 @@ a:focus {
   margin: 8px;
 }
 
+#quote {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.75em;
+  font-weight: 400;
+  text-align: center;
+  color: #34444c;
+  margin: 30px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
