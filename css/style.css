@@ -338,6 +338,18 @@ a:focus {
   margin: 30px;
 }
 
+#quotecaption {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #34444c;
+}
+
+
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -403,14 +415,6 @@ Medium devices (640px and larger)
   #quote {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5em;
-    font-weight: 400;
-    text-align: center;
-    color: #34444c;
-  }
-
-  #quotecaption {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     text-align: center;
     color: #34444c;
