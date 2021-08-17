@@ -135,6 +135,8 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 700;
+  margin-bottom: 6px;
+  margin-top: 6px;
 }
 
 h4 {
@@ -331,7 +333,7 @@ a:focus {
 
 #quote {
   font-family: 'Work Sans', sans-serif;
-  font-size: 2.25em;
+  font-size: 2.00em;
   font-weight: 400;
   text-align: center;
   color: #34444c;
@@ -345,9 +347,6 @@ a:focus {
   text-align: center;
   color: #34444c;
 }
-
-
-
 
 
 /* ==============================
@@ -531,10 +530,6 @@ Large devices (1024px or larger)
       width: 280px;
       height: auto;
       padding-left: 24px;
-    }
-
-    h2 {
-      font-size: 2.50em;
     }
 
     h3 {
