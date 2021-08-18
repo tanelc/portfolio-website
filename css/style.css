@@ -257,7 +257,7 @@ a.caption {
   font-family: 'Work Sans', sans-serif;
   color: #34444c;
   text-align: right;
-  vertical-align: bottom;
+  display: inline;
   margin-bottom: 6px;
 }
 
@@ -265,11 +265,11 @@ a.caption {
   font-family: 'Work Sans', sans-serif;
   color: #34444c;
   text-align: left;
-  vertical-align: bottom;
+  display: inline;
   margin-bottom: 6px;
 }
 
-.wrapper, .twowrapper {
+.wrapper, .twowrapper, .footerwrapper {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -280,7 +280,13 @@ a.caption {
   padding: 20px;
   display: inline-block;
   text-align: center;
+  transition: transform .2s; /* Animation */
 }
+
+.imgicons:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 
 .iconcontainer {
   width: 100%;
@@ -387,7 +393,7 @@ Medium devices (640px and larger)
     margin: auto;
   }
 
-  .wrapper, .twowrapper {
+  .wrapper, .twowrapper, .footerwrapper {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -500,6 +506,14 @@ Large devices (1024px or larger)
 
     .twowrapper {
       display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.5em;
+      row-gap: 1em;
+    }
+
+    .footerwrapper {
+      display: grid;
+      vertical-align: bottom;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 1.5em;
       row-gap: 1em;
