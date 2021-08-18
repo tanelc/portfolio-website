@@ -72,11 +72,12 @@ a:focus {
   font-weight: 500;
   text-decoration: none;
   padding: 10px 20px 10px 20px;
-  text-align: center;
-  margin: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   border-radius: 60px;
   transition-duration: 0.4s;
   transition-property: background-color;
+
 }
 
 a.button {
@@ -233,6 +234,7 @@ a:focus {
 }
 
 #overline {
+  font-family: 'Work Sans', sans-serif;
   color: #34444c;
   opacity: 80%;
   margin-top: 10px;
@@ -494,6 +496,16 @@ Large devices (1024px or larger)
       column-gap: 1.5em;
       row-gap: 1em;
     }
+
+    .wrapperbuttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1.5em;
+      row-gap: 1em;
+    }
+
+
+
 
     .twowrapper {
       display: grid;
