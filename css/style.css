@@ -10,7 +10,7 @@ html {
 .logo {
   display: flex;
   padding-left: 8px;
-  justify-self: first;
+  justify-self: start;
   max-width: 180px;
   height: auto;
 }
@@ -23,7 +23,6 @@ header {
   text-align: center;
   border-bottom: 2px solid;
   border-color: #e96166;
-  border-width: 100%;
 }
 
 main {
@@ -35,7 +34,8 @@ main {
 footer {
   background-color: #e7ecee;
   padding: 10px;
-  margin-top: 20px overflow-wrap: break-word;
+  margin-top: 20px;
+  overflow-wrap: break-word;
 }
 
 img {
@@ -66,7 +66,9 @@ a:focus {
 }
 
 .button {
-  display: inline-block;
+  display: inline-block; 
+  margin: 0 auto;
+  text-align: center;
   color: white;
   background-color: #e96166;
   font-weight: 500;
@@ -77,7 +79,6 @@ a:focus {
   border-radius: 60px;
   transition-duration: 0.4s;
   transition-property: background-color;
-
 }
 
 a.button {
@@ -99,18 +100,18 @@ a.button {
   opacity: 0.4;
 }
 
-.bigfontcontact p{
-    font-size: 2.0em;
-    margin: 0;
-    -webkit-transition: font-size .5s ease;
-    -moz-transition: font-size .5s ease;
-    -o-transition: font-size .5s ease;
-    transition: font-size .5s ease;
-  }
+.bigfontcontact p {
+  font-size: 2.0em;
+  margin: 0;
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
+}
 
-  .bigfontcontact p:hover {
-    font-size: 3.5em;
-  }
+.bigfontcontact p:hover {
+  font-size: 3.5em;
+}
 
 font {
   font-family: 'Work Sans', sans-serif;
@@ -156,6 +157,7 @@ h5 {
 h6 {
   font-size: 0.8em;
   font-weight: 400;
+  text-align: center;
   opacity: 0.8;
   margin-top: 0px;
 }
@@ -233,7 +235,7 @@ a:focus {
   max-width: 300px;
 }
 
-#overline {
+.overline {
   font-family: 'Work Sans', sans-serif;
   color: #34444c;
   opacity: 80%;
@@ -241,7 +243,7 @@ a:focus {
   margin-bottom: 4px;
 }
 
-#caption {
+.caption {
   font-family: 'Work Sans', sans-serif;
   color: #34444c;
   font-weight: 600;
@@ -251,8 +253,7 @@ a:focus {
   font-family: 'Work Sans', sans-serif;
   color: #34444c;
   text-align: right;
-  position: bottom;
-  text-align: bottom;
+  vertical-align: bottom;
   margin-bottom: 6px;
 }
 
@@ -260,8 +261,7 @@ a:focus {
   font-family: 'Work Sans', sans-serif;
   color: #34444c;
   text-align: left;
-  position: bottom;
-  text-align: bottom;
+  vertical-align: bottom;
   margin-bottom: 6px;
 }
 
@@ -270,7 +270,7 @@ a:focus {
   grid-template-columns: 1fr;
 }
 
-#imgicons {
+.imgicons {
   width: 40px;
   height: 40px;
   padding: 20px;
@@ -351,7 +351,6 @@ a:focus {
   color: #ab4448;
 }
 
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -364,7 +363,6 @@ Medium devices (640px and larger)
   }
 
   header {
-    width: 100%;
     height: 80px;
     background-color: #ffffff;
     position: fixed;
@@ -415,9 +413,9 @@ Medium devices (640px and larger)
   }
 
   #quote {
-      font-family: 'Work Sans', sans-serif;
-      font-size: 2.75em;
-      margin: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.75em;
+    margin: 20px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -455,7 +453,6 @@ Large devices (1024px or larger)
       text-align: unset;
       border-bottom: 2px solid;
       border-color: #e96166;
-      border-width: 100%;
       border-spacing: 0 50px;
     }
 
@@ -497,16 +494,6 @@ Large devices (1024px or larger)
       row-gap: 1em;
     }
 
-    .wrapperbuttons {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 1.5em;
-      row-gap: 1em;
-    }
-
-
-
-
     .twowrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -526,7 +513,7 @@ Large devices (1024px or larger)
       font-size: 1.75em;
     }
 
-    #caption {
+    .caption {
       font-size: 18px;
     }
 
@@ -538,8 +525,6 @@ Large devices (1024px or larger)
     }
 
     .logo {
-      display: flex;
-      justify-self: first;
       width: 280px;
       height: auto;
       padding-left: 24px;
@@ -580,9 +565,9 @@ Large devices (1024px or larger)
     }
 
     #quote {
-        font-family: 'Work Sans', sans-serif;
-        font-size: 3.25em;
-        margin: 30px;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 3.25em;
+      margin: 30px;
     }
   }
 
@@ -605,7 +590,6 @@ X-large devices (1440px or larger)
     }
 
     .spacer {
-      width: 100%;
       height: 190px;
     }
   }
