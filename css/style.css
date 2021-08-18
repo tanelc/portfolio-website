@@ -22,7 +22,7 @@ header {
   height: 50px;
   text-align: center;
   border-bottom: 2px solid;
-  border-color: #e96166;
+  border-color: #b50051;
 }
 
 main {
@@ -66,11 +66,11 @@ a:focus {
 }
 
 .button {
-  display: inline-block; 
+  display: inline-block;
   margin: 0 auto;
   text-align: center;
   color: white;
-  background-color: #e96166;
+  background-color: #b50051;
   font-weight: 500;
   text-decoration: none;
   padding: 10px 20px 10px 20px;
@@ -87,7 +87,7 @@ a.button {
 }
 
 .button:hover {
-  background-color: #ab4448;
+  background-color: #DE0063;
   color: white;
 }
 
@@ -197,7 +197,7 @@ nav>ul>li>a:active a:active {
 }
 
 a:hover {
-  color: #e96166;
+  color: #b50051;
 }
 
 a:active {
@@ -339,7 +339,7 @@ a:focus {
   font-size: 2.00em;
   font-weight: 400;
   text-align: center;
-  color: #e96166;
+  color: #b50051;
   margin: 20px;
 }
 
@@ -369,7 +369,7 @@ Medium devices (640px and larger)
     z-index: 100;
     top: 0;
     border-bottom: 2px solid;
-    border-color: #e96166;
+    border-color: #b50051;
   }
 
   .logo {
@@ -452,7 +452,7 @@ Large devices (1024px or larger)
       height: 120px;
       text-align: unset;
       border-bottom: 2px solid;
-      border-color: #e96166;
+      border-color: #b50051;
       border-spacing: 0 50px;
     }
 
