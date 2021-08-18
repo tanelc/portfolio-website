@@ -68,7 +68,6 @@ a:focus {
 .button {
   display: flex;
   justify-content: center;
-  align-items: center;
   max-width: 150px;
   text-align: center;
   color: white;
