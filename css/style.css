@@ -11,7 +11,7 @@ html {
   display: flex;
   padding-left: 8px;
   justify-self: start;
-  max-width: 180px;
+  max-width: 200px;
   height: auto;
 }
 
@@ -78,9 +78,9 @@ a:focus {
   border-radius: 60px;
   transition-duration: 0.4s;
   transition-property: background-color;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
 }
 
 a.button {
@@ -164,7 +164,6 @@ h6 {
 }
 
 p {
-  font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin: 0;
@@ -191,11 +190,9 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:visited a:visited {
-  color: #34444c;
 }
 
 nav>ul>li>a:active a:active {
-  color: #34444c;
 }
 
 a:hover {
@@ -276,13 +273,14 @@ a.caption {
   padding: 20px;
   display: inline-block;
   text-align: center;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
+  /* Animation */
 }
 
 .imgicons:hover {
-  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
 
 .iconcontainer {
   width: 100%;
@@ -611,3 +609,4 @@ X-large devices (1440px or larger)
       height: 160px;
     }
   }
+}
