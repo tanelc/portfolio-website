@@ -380,6 +380,10 @@ Medium devices (640px and larger)
     padding-bottom: 12px;
   }
 
+  .imgsmall {
+    max-width: 600px;  }
+
+
   header {
     height: 40px;
     background-color: #ffffff;
@@ -482,7 +486,6 @@ Large devices (1024px or larger)
     nav {
       width: auto;
       text-align: center;
-      margin-top: 4px;
     }
 
     nav>ul>li>a {
@@ -498,6 +501,7 @@ Large devices (1024px or larger)
       font-size: 2.50em;
       font-weight: 800;
       margin-bottom: 10px;
+      margin-top: 10px;
     }
 
     p {
@@ -551,20 +555,12 @@ Large devices (1024px or larger)
       padding-top: 35px;
     }
 
-    .logo {
-      width: 280px;
-      height: auto;
-      padding-left: 24px;
-      padding-bottom: 0px;
-
-    }
-
     h3 {
       font-size: 2.00em;
     }
 
     .logo {
-      max-width: 260px;
+      max-width: 240px;
       padding-left: 24px;
       padding-top: 20px;
       padding-bottom: 0px;
@@ -573,12 +569,12 @@ Large devices (1024px or larger)
 
     .spacer {
       width: 100%;
-      height: 160px;
+      height: 90px;
     }
 
     .footerspacer {
       width: 100%;
-      height: 80px;
+      height: 60px;
     }
 
     #h2footer {
@@ -620,9 +616,9 @@ X-large devices (1440px or larger)
       column-gap: 1.5em;
       row-gap: 1em;
     }
-
-    .spacer {
-      height: 160px;
-    }
-  }
+    
+    #quote {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2.75em;
+      }
 }
