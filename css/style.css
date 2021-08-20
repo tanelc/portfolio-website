@@ -229,7 +229,7 @@ a:focus {
 }
 
 #herocopy {
-  font-size: 1.25em;
+  font-size: 1.2em;
   text-align: left;
   font-weight: 500;
   margin: 0;
@@ -533,15 +533,15 @@ Large devices (1024px or larger)
     }
 
     #hero {
-      font-size: 3.5em;
+      font-size: 3.00em;
     }
 
     #herospan {
-      font-size: 3.5em;
+      font-size: 3.00em;
     }
 
     #herocopy {
-      font-size: 1.75em;
+      font-size: 1.70em;
     }
 
     .caption {
@@ -616,7 +616,7 @@ X-large devices (1440px or larger)
       column-gap: 1.5em;
       row-gap: 1em;
     }
-    
+
     #quote {
         font-family: 'Work Sans', sans-serif;
         font-size: 2.75em;
