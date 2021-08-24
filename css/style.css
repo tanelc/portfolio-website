@@ -373,7 +373,8 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     text-align: center;
-    margin-right: 16px
+    margin-right: 16px;
+    margin-top: -25px;
   }
 
   img {
@@ -398,6 +399,7 @@ Medium devices (640px and larger)
     max-width: 210px;
     padding-left: 16px;
     padding-bottom: 0px;
+  margin-top: 25px;
   }
 
   .header-style {
@@ -562,7 +564,6 @@ Large devices (1024px or larger)
     .logo {
       max-width: 240px;
       padding-left: 24px;
-      padding-top: 20px;
       padding-bottom: 0px;
 
     }
